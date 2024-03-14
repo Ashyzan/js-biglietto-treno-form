@@ -28,6 +28,13 @@ buttonElement.addEventListener('submit', function (event) {
 })
 
 // calcolare il prezzo base
-let prezzobase = 0.21 * kmElement
+let prezzobase = 0.21 * km
 console.log(prezzobase)
 
+// calcolare lo sconto
+
+if (age < 18) {
+
+    prezzobase = 
+
+}
