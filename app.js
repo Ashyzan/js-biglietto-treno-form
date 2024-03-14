@@ -3,7 +3,6 @@ console.log('funziona') ;
 // recuperare i km dall’input dei km
 const kmElement = document.getElementById ('Kilometri'); // object | null
 console.dir(kmElement);
-
 // trasformare kmElement in numero
 const km = parseFloat(kmElement.value);
 
@@ -11,7 +10,6 @@ const km = parseFloat(kmElement.value);
 // recuperare l’eta dall’input dell’età
 const etaElement = document.getElementById ('age');
 console.dir(etaElement);
-
 // trasformare etaElement in numero
 const eta = parseFloat(etaElement.value);
 
@@ -21,20 +19,14 @@ const buttonElement = document.getElementById('submit'); //
 console.dir(buttonElement);
 
 // attivare ascolto sul submit del form
+buttonElement.addEventListener("click", function (event));
 
-buttonElement.addEventListener('submit', function (event) {
-    console.log('click sul button')
-
-})
+function event() {
+  document.getElementById("submit").innerHTML = "Hello World";
+}
 
 // calcolare il prezzo base
-let prezzobase = 0.21 * km
+const prezzobase = 0.21 * km
 console.log(prezzobase)
 
 // calcolare lo sconto
-
-if (age < 18) {
-
-    prezzobase = 
-
-}
