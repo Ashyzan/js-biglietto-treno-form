@@ -21,18 +21,18 @@ buttonElement.addEventListener("click", function () {
 
     // questo codice verrà eseguito quando l'utente preme bottone
     
-    // trasformare kmElement in numero
+    // prendere valore inserito dall'utente come value e restituirlo trasformandolo in numero
     const km = parseFloat(kmElement.value);
 
-    // trasformare etaElement in numero
+    // prendere valore inserito dall'utente come value e restituirlo trasformandolo in numero
     const eta = parseFloat(etaElement.value);
 
-    console.log(km , eta)
+    // console.log(km , eta)
 
     const prezzobase = 0.21 * km
     let sconto = 0
 
-    console.log(prezzobase)
+    // console.log(prezzobase)
 
     if (eta <= 18 ) {
 
@@ -47,9 +47,10 @@ buttonElement.addEventListener("click", function () {
     }
 
     const prezzofinale = prezzobase - sconto
-    console.log(prezzofinale)
 
-    document.getElementById("result").innerHTML = prezzofinale;
+    console.log( km, eta , prezzofinale)
+
+    document.getElementById("result").innerHTML = prezzofinale + ' €';
 
 
 });
